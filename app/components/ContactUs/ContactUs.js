@@ -52,7 +52,7 @@ export default function ContactUs() {
 							</a>{" "}
 						</p>
 					</div>
-					<ContactForm className="flex justify-center"/>
+					<ContactForm/>
 				</div>
 			</Container>
 		</section>

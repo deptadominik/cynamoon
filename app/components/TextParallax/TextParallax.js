@@ -24,7 +24,7 @@ const Slide = ({ left, progress, direction }) => {
 const Phrase = () => {
 	return (
 		<div>
-			<p className="text-[5rem] leading-none overflow-hidden uppercase font-bold">Cynamoon -</p>
+			<p className="text-[5rem] leading-none overflow-hidden uppercase font-bold"> Cynamoon 🌘 &nbsp;</p>
 		</div>
 	);
 };
