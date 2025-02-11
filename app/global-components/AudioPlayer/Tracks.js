@@ -1,6 +1,6 @@
 export const tracks = [
 	{
-		title: "Green Daze",
+		title: "TODO prawdopodobnie zastapimy to zwyklym Spotify'em",
 		src: "./mp3-songs/green-daze.mp3",
 		author: "Your Bandmate",
 	},

@@ -2,10 +2,10 @@ import Footer from "./components/Footer/Footer";
 import "./globals.css";
 
 export const metadata = {
-	title: "Free Next.js Music band starter template | by Panino Panini",
-	description: "Free Next.js rock'n'roll band starter template to clone/fork from my Github page.",
+	title: "Cynamoon - Strona Oficjalna",
+	description: "Oficjalna strona zespołu Cynamoon",
 	verification: {
-		google: "ephPAYWfbfSOHHWnGeqEHiOPuxTXr300eIzTmT2oJcY",
+		// google: "ephPAYWfbfSOHHWnGeqEHiOPuxTXr300eIzTmT2oJcY",
 	},
 };
 

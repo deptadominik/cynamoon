@@ -4,12 +4,7 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import ScrollTo from "@/app/global-components/ScrollTo/ScrollTo";
 import ButtonPrimary from "@/app/global-components/ButtonPrimary/ButtonPrimary";
-import { MapMapper, Github } from "@/app/svg-icons/svg-icons";
-
-const observerOptions = {
-	rootMargin: "0px",
-	threshold: 0.3,
-};
+import { MapMapper } from "@/app/svg-icons/svg-icons";
 
 const tourDates = [
 	{
@@ -38,57 +33,59 @@ const tourDates = [
 export default function IntroTourDates() {
 	const sectionRef = useRef(null);
 	const isInView = useInView(sectionRef, { once: true });
+
 	return (
 		<div
-			className={`flex flex-col justify-center items-center lg:justify-end lg:items-end`}
+			className="flex flex-col items-center justify-center w-full px-4 lg:pl-[20rem] max-w-6xl mx-auto"
 			style={{
 				transform: isInView ? "none" : "translateY(-100px)",
 				opacity: isInView ? 1 : 0,
 				transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 			}}
-			ref={sectionRef}>
-			<h2 className="text-white font-permanentMarker text-2xl md:text-3xl lg:text-4xl">
+			ref={sectionRef}
+		>
+			<h2 className="text-white font-permanentMarker text-2xl md:text-3xl lg:text-4xl text-center">
 				⚡ Koncertowy alert ⚡
 			</h2>
-			<ul className="list-none">
+
+			{/* Lista koncertów */}
+			<ul className="list-none w-full max-w-xl mt-6">
 				{tourDates.map((gig) => {
 					return (
 						<li
 							key={gig.id}
-							className="flex items-center my-10 justify-between text-xl md:justify-end md:text-2xl lg:text-2xl xl:text-3xl">
-							<div className="flex flex-col justify-center items-center date w-[4.7rem] h-[4.7rem] p-2 bg-blue-900 mr-4 text-2xl rounded-md border-8 border-white md:mr-12 lg:w-[5.5rem] lg:h-[5.5rem]">
-								<p className="font-bold text-l text-white leading-none text-center uppercase lg:text-2xl">
+							className="grid grid-cols-[6rem_1fr_auto] gap-8 items-center my-10 text-xl md:text-2xl lg:text-xl xl:text-2xl"
+						>
+							{/* Data */}
+							<div className="flex flex-col justify-center items-center w-[5.5rem] h-[5.5rem] p-2 bg-blue-900 text-xl rounded-md border-8 border-white">
+								<p className="font-bold text-white leading-none text-center uppercase lg:text-2xl">
 									{gig.date}
 								</p>
 							</div>
-							<div className="text-white text-right leading-none md:mr-12">
+
+							{/* Godzina + Miejsce */}
+							<div className="text-white leading-none flex flex-col justify-center">
 								<p>{gig.dayTime}</p>
 								<p>{gig.venue}</p>
-								<div className="flex justify-end md:hidden">
-									<MapMapper extraClasses="fill-amber-400 mr-2" />
-									<p>{gig.city}</p>
-								</div>
 							</div>
-							<div className="hidden text-right text-white leading-none md:flex">
-								<MapMapper extraClasses="fill-amber-400 mr-2" />
+
+							{/* Miasto */}
+							<div className="text-white flex items-center">
+								<MapMapper extraClasses="fill-amber-400 mr-4" />
 								<p>{gig.city}</p>
 							</div>
 						</li>
 					);
 				})}
 			</ul>
-			<div className="gap-x-3 lg:flex">
-				{/* <a href="https://github.com/stefanogali/panic-panini-next" target="_blank" rel="noreferrer">
-					<ButtonPrimary customClasses="flex items-center gap-x-1 text-sm my-3 lg:text-base lg:mb-0">
-						<Github extraClasses="w-3 h-auto fill-white lg:w-5" />
-						Github Repo
+
+			{/* Przycisk */}
+			<div className="mt-8">
+				<ScrollTo toId="shows" duration={1500}>
+					<ButtonPrimary customClasses="bg-blue-900 hover:bg-blue-600 px-6 py-3 text-lg">
+						SPRAWDŹ WIĘCEJ
 					</ButtonPrimary>
-				</a> */}
-				<div className="hidden lg:block">
-					<ScrollTo toId="shows" duration={1500}>
-						<ButtonPrimary customClasses="bg-blue-900 hover:bg-blue-600">Sprawdź więcej</ButtonPrimary>
-					</ScrollTo>
-				</div>
+				</ScrollTo>
 			</div>
 		</div>
 	);

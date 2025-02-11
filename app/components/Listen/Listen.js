@@ -21,25 +21,25 @@ export default function Listen() {
 						opacity: isInView ? 1 : 0,
 						transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 					}}>
-					<p>Listen to the new album:</p>
+					<p className="mb-4">Posłuchaj naszego najnowszego kawałka:</p>
 					<div className="overflow-hidden">
 						<h2
 							className={`font-bold text-6xl pb-6 translate-y-36 md:translate-y-24 ${
 								isInView ? "animate-slideUp" : ""
 							}`}>
-							Panic in the room
+							Nie chcę ufać Ci
 						</h2>
 					</div>
-					<p>
-						Dovrebbero seguire le mie voglie, la sera appena alzato, o tardi la mattina dopo la
-						colazione, prima d&#8217;addormentarmi.
+					<p className="text-justify">
+					Utwór to opowieść o relacji i zaufaniu – o więzi, która ewoluuje, zmienia się i trwa, ale też o zaufaniu, które trudno zdobyć, lecz niezwykle łatwo stracić.
 					</p>
-					<div className="flex items-center pt-4 gap-4">
+					{/* TODO chyba zbedne */}
+					{/* <div className="flex items-center pt-4 gap-4">
 						<Spotify />
 						<SoundCloud />
 						<Youtube />
 						<AppleMusic />
-					</div>
+					</div> */}
 				</div>
 				<div className="flex items-center justify-center pt-5 basis-2/4 mt-20 lg:mt-0 lg:justify-end lg:pt-[60px]">
 					<AudioPlayer />
