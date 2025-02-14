@@ -89,7 +89,7 @@ export default function About() {
 
       <Image
         className="w-full mt-5 max-w-md h-auto object-cover lg:mt-0 lg:max-w-sm xl:max-w-md mr-4 lg:mr-12 xl:mr-16 rounded-lg"
-        src="/about.jpg"
+        src={`${basePath}/about.jpg`}
         width={533}
         height={533}
         alt="Group photo"
