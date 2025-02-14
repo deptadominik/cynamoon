@@ -46,11 +46,11 @@ export default function Intro() {
           className="object-cover w-full h-full z-10"
           playsInline
         >
-          <source src="./video-band.webm" type="video/webm" />
-          <source src="./video-band.mp4" type="video/mp4" />
+          <source src={`${process.env.NEXT_PUBLIC_BASE_PATH}/video-band.webm`} type="video/webm" />
+          <source src={`${process.env.NEXT_PUBLIC_BASE_PATH}/video-band.mp4`} type="video/mp4" />
           <p>
             Your browser doesn&#8217;t support HTML video. Here is a
-            <a href="./video-band.mp4">link to the video</a> instead.
+            <a href={`${process.env.NEXT_PUBLIC_BASE_PATH}/video-band.mp4`}>link to the video</a> instead.
           </p>
         </video>
       </div>

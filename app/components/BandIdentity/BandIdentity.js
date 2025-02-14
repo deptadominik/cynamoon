@@ -11,7 +11,7 @@ export default function BandIdentity() {
 		<>
 			<div className="w-full py-3 z-50 lg:hidden">
 				<Container customClasses="px-2.5 flex items-center justify-between font-sm">
-					<Image className="max-w-[6rem] h-auto " src="/logo-portrait.png" width={324} height={324} alt="Cynamoon logo" />
+					<Image className="max-w-[6rem] h-auto " src={`${process.env.NEXT_PUBLIC_BASE_PATH}/logo-portrait.png`} width={324} height={324} alt="Cynamoon logo" />
 					<ScrollTo toId="shows" duration={1500}>
 						<ButtonPrimary customClasses="text-sm">Koncerty</ButtonPrimary>
 					</ScrollTo>
@@ -19,7 +19,7 @@ export default function BandIdentity() {
 			</div>
 			<div className="hidden h-full flex-col justify-start grow-0 shrink-0 bg-black z-10 bg-opacity-50 lg:flex">
 				<div className="logo-container  py-4 opacity-1">
-					<Image className="px-12 py-3 max-w-[18.75rem] h-auto" src="/logo-portrait.png" width={324} height={236} alt="Cynamoon logo" />
+					<Image className="px-12 py-3 max-w-[18.75rem] h-auto" src={`${process.env.NEXT_PUBLIC_BASE_PATH}/logo-portrait.png`} width={324} height={236} alt="Cynamoon logo" />
 				</div>
 				<NewAlbum />
 			</div>

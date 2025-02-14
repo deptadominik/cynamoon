@@ -16,7 +16,7 @@ export default function ContactUs() {
 			className={`relative flex flex-col-reverse items-center w-full mt-16 mx-auto max-w-[150rem] lg:mt-56 lg:flex-row`}>
 			<Image
 				className="mt-5 max-h-96 object-cover lg:mt-0 lg:max-h-none lg:max-w-lg lg:block xl:max-w-xl rounded-lg ml-4 lg:ml-12 xl:ml-16"
-				src="/P1022275-2.jpg"
+				src={`${process.env.NEXT_PUBLIC_BASE_PATH}/P1022275-2.jpg`}
 				width={450}
 				height={233}
 				alt="Cynamoon group photo"

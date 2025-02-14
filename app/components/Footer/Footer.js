@@ -26,7 +26,7 @@ export default function Footer() {
             <div className="flex justify-center w-full">
               <Image
                 className="max-w-[6.5rem] lg:max-w-[6.5rem] h-auto"
-                src="/logo-landscape.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/logo-landscape.png`}
                 width={815}
                 height={144}
                 alt="Footer logo"
