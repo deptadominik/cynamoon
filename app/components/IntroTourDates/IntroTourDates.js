@@ -79,14 +79,14 @@ export default function IntroTourDates() {
 				})}
 			</ul>
 
-			{/* Przycisk */}
+			{/* Przycisk
 			<div className="mt-8">
 				<ScrollTo toId="shows" duration={1500}>
 					<ButtonPrimary customClasses="bg-blue-900 hover:bg-blue-600 px-6 py-3 text-lg">
 						SPRAWDŹ WIĘCEJ
 					</ButtonPrimary>
 				</ScrollTo>
-			</div>
+			</div> */}
 		</div>
 	);
 }
