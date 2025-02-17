@@ -16,19 +16,45 @@ const galleryThumbnails = [
     city: "Gliwice",
     date: "6/02/2025",
     slides: [
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-14.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-15.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-16.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-17.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-18.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-19.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-20.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-21.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-22.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-23.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-24.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-25.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-26.jpg` }
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-14.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-15.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-16.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-17.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-18.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-19.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-20.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-21.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-22.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-23.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-24.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-25.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-26.jpg`,
+      },
     ],
   },
   {
@@ -38,19 +64,45 @@ const galleryThumbnails = [
     city: "Kraków",
     date: "12/10/2024",
     slides: [
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-4.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-1.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-2.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-3.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-5.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-6.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-7.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-8.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-9.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-10.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-11.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-12.jpg` },
-      { src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-13.jpg` }
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-4.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-1.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-2.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-3.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-5.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-6.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-7.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-8.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-9.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-10.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-11.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-12.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/slider-13.jpg`,
+      },
     ],
   },
 ];
@@ -87,7 +139,6 @@ export default function PhotoGallery() {
             Galeria
           </h2>
         </div>
-        <p>Nasza koncertowa kronika 📸</p>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-5">
           {galleryThumbnails.map((item, index) => {
             return (

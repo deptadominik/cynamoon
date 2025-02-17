@@ -1,7 +1,11 @@
 import Container from "@/app/global-components/Container/Container";
-import SubscribeForm from "@/app/global-components/SubscribeForm/SubscribeForm";
-import Image from "next/image";
-import { SiInstagram, SiTiktok, SiYoutube, SiFacebook } from "react-icons/si"; // Import ikon
+import {
+  SiInstagram,
+  SiTiktok,
+  SiYoutube,
+  SiFacebook,
+  SiSpotify,
+} from "react-icons/si";
 
 export default function Footer() {
   return (
@@ -12,35 +16,42 @@ export default function Footer() {
       <footer className="w-full">
         <div className="bg-blue-900 pt-2 relative z-[100]">
           <Container customClasses="flex justify-between items-center w-full">
-            {/* Social media po lewej */}
-            <div className="flex gap-3 md:gap-4">
-              <a href="https://www.facebook.com/cynamoon.official" target="_blank" rel="noopener noreferrer">
+            {/* Social media */}
+            <div className="flex justify-center items-center w-full gap-3 md:gap-8">
+              <a
+                href="https://www.facebook.com/cynamoon.official"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <SiFacebook className="text-white hover:text-gray-300 w-8 h-8 transition-colors" />
               </a>
-              <a href="https://www.instagram.com/cynamoon.official" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.instagram.com/cynamoon.official"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <SiInstagram className="text-white hover:text-gray-300 w-8 h-8 transition-colors" />
               </a>
-            </div>
-
-            {/* Logo centralnie */}
-            <div className="flex justify-center w-full">
-              <Image
-                className="max-w-[6.5rem] lg:max-w-[6.5rem] h-auto"
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/logo-landscape.png`}
-                width={815}
-                height={144}
-                alt="Footer logo"
-                unoptimized={true}
-              />
-            </div>
-
-            {/* Social media po prawej */}
-            <div className="flex gap-3 md:gap-4">
-              <a href="https://www.tiktok.com/@_cynamoon_" target="_blank" rel="noopener noreferrer">
-                <SiTiktok className="text-white hover:text-gray-300 w-8 h-8 transition-colors" />
+              <a
+                href="https://open.spotify.com/artist/5dEQVavGCkBiNSVahYbUND"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SiSpotify className="text-white hover:text-gray-300 w-8 h-8 transition-colors" />
               </a>
-              <a href="https://www.youtube.com/@cynamoon_" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.youtube.com/@cynamoon_"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <SiYoutube className="text-white hover:text-gray-300 w-8 h-8 transition-colors" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@_cynamoon_"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SiTiktok className="text-white hover:text-gray-300 w-8 h-8 transition-colors" />
               </a>
             </div>
           </Container>

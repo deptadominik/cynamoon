@@ -39,51 +39,11 @@ export default function About() {
             <b>Cynamoon.</b> Pop z elementami funkowej energii oraz lirycznymi
             tekstami, okraszone soulowym feelingiem momentami nawet w rytmie
             disco, co sprawia, że nasza muzyka – choć osadzona w konkretnej
-            estetyce – posiada różne oblicza. Pochodzimy ze śląska. W obecnym
+            estetyce – posiada różne oblicza. Pochodzimy ze Śląska. W obecnym
             składzie, na który składa się aż 9 muzycznych osobowości, gramy od
-            maja 2024 roku. Uwielbiamy eksperymentować, tworzyć niebanalne
-            melodie, a także improwizować. Jam session to obowiązkowa pozycja
-            każdej naszej próby.
+            2024 roku. Uwielbiamy eksperymentować, tworzyć niebanalne melodie, a
+            także improwizować.
           </p>
-
-          {/* Ikony społecznościowe */}
-          <div className="flex justify-center pt-8 gap-6">
-            {/* Instagram */}
-            <a
-              href="https://www.instagram.com/cynamoon.official"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SiInstagram className="text-gray-800 hover:text-gray-500 w-8 h-8 transition-colors" />
-            </a>
-
-            {/* TikTok */}
-            <a
-              href="https://www.tiktok.com/@_cynamoon_"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SiTiktok className="text-gray-800 hover:text-gray-500 w-8 h-8 transition-colors" />
-            </a>
-
-            {/* YouTube */}
-            <a
-              href="https://www.youtube.com/@cynamoon_"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SiYoutube className="text-gray-800 hover:text-gray-500 w-8 h-8 transition-colors" />
-            </a>
-
-            {/* Facebook */}
-            <a
-              href="https://www.facebook.com/cynamoon.official"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SiFacebook className="text-gray-800 hover:text-gray-500 w-8 h-8 transition-colors" />
-            </a>
-          </div>
         </div>
       </Container>
 
