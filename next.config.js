@@ -4,7 +4,7 @@ const nextConfig = {
   basePath: "/cynamoon",
   assetPrefix: "/cynamoon/",
   env: {
-    NEXT_PUBLIC_BASE_PATH: "",
+    NEXT_PUBLIC_BASE_PATH: "/cynamoon",
   },
 };
 
