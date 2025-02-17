@@ -25,9 +25,6 @@ export default function BandIdentity() {
             height={324}
             alt="Cynamoon logo"
           />
-          <ScrollTo toId="shows" duration={1500}>
-            <ButtonPrimary customClasses="text-sm">Koncerty</ButtonPrimary>
-          </ScrollTo>
         </Container>
       </div>
       <div className="hidden h-full flex-col justify-start grow-0 shrink-0 bg-black z-10 bg-opacity-50 lg:flex">
@@ -41,7 +38,7 @@ export default function BandIdentity() {
           />
         </div>
         <NewAlbum />
-        <div className="flex flex-col justify-center items-center h-full gap-20 md:gap-16">
+        <div className="flex justify-center items-center gap-20 md:gap-16 mt-[100px]">
           <a
             href="https://www.facebook.com/cynamoon.official"
             target="_blank"
@@ -57,6 +54,15 @@ export default function BandIdentity() {
             <SiInstagram className="text-white hover:text-gray-300 w-10 h-10 transition-colors" />
           </a>
           <a
+            href="https://www.tiktok.com/@_cynamoon_"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiTiktok className="text-white hover:text-gray-300 w-10 h-10 transition-colors" />
+          </a>
+        </div>
+        <div className="flex justify-center items-center md:gap-16 mt-[100px]">
+          <a
             href="https://open.spotify.com/artist/5dEQVavGCkBiNSVahYbUND"
             target="_blank"
             rel="noopener noreferrer"
@@ -69,13 +75,6 @@ export default function BandIdentity() {
             rel="noopener noreferrer"
           >
             <SiYoutube className="text-white hover:text-gray-300 w-10 h-10 transition-colors" />
-          </a>
-          <a
-            href="https://www.tiktok.com/@_cynamoon_"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SiTiktok className="text-white hover:text-gray-300 w-10 h-10 transition-colors" />
           </a>
         </div>
       </div>

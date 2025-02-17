@@ -10,18 +10,21 @@ const tourDates = [
     date: "20.03",
     venue: "Klub Studencki Spirala",
     city: "Gliwice",
+    eventRef: "",
   },
   {
     id: 2,
     date: "21.03",
     venue: "Komin Music Cafe",
     city: "Sosnowiec",
+    eventRef: "https://www.facebook.com/events/4038454276391813",
   },
   {
     id: 3,
     date: "10.05",
     venue: "Rebel Garden Cafe",
     city: "Chorzów",
+    eventRef: "",
   },
 ];
 
@@ -40,11 +43,11 @@ export default function IntroTourDates() {
       ref={sectionRef}
     >
       <h2 className="text-white font-permanentMarker text-2xl md:text-3xl lg:text-4xl text-center">
-        Najbliższe Koncerty
+        Koncerty
       </h2>
 
       {/* Lista koncertów */}
-      <ul className="list-none w-full max-w-xl mt-6">
+      <ul className="list-none w-full max-w-2xl mt-6">
         {tourDates.map((gig) => {
           return (
             <li
@@ -58,9 +61,19 @@ export default function IntroTourDates() {
                 </p>
               </div>
 
-              {/* Godzina + Miejsce */}
+              {/* Miejsce */}
               <div className="text-white leading-none flex flex-col justify-center">
-                <p>{gig.venue}</p>
+                {gig.eventRef !== "" ? (
+                  <a
+                    href={gig.eventRef}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p>{gig.venue}</p>
+                  </a>
+                ) : (
+                  <p>{gig.venue}</p>
+                )}
               </div>
 
               {/* Miasto */}
