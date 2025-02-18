@@ -64,7 +64,7 @@ const members = [
 
 export default function Members() {
   return (
-    <section>
+    <section id="members">
       {members.map((member, index) => {
         const ref = useRef(null);
         const isInView = useInView(ref, { once: true });

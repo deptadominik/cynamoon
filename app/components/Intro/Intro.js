@@ -70,17 +70,19 @@ export default function Intro() {
       <BackToTop
         customClasses={`reveal${isScrollTopVisible ? " visible" : ""}`}
       />
-      <CookieConsent
-        disableStyles={true}
-        buttonText="Consent"
-        cookieName="cookie_consent"
-        buttonClasses="bg-yellow-btn-primary rounded-full p-1 px-3 text-sm text-xs text-white"
-        containerClasses="w-full fixed !bottom-0 bg-fluo-green p-3 z-[50] lg:bg-stone-300/70 lg:backdrop-blur-lg lg:left-8 lg:!bottom-2 lg:rounded-md lg:max-w-md"
-        contentClasses="text-sm leading-none mb-1 lg:text-white"
-        expires={20}
-      >
-        This website uses cookies to enhance the user experience.
-      </CookieConsent>
+<CookieConsent
+  disableStyles={true}
+  buttonText="Jasne!"
+  cookieName="cookie_consent"
+  buttonClasses="bg-yellow-btn-primary rounded-full p-2 px-4 text-sm text-white mt-2 self-center"
+  containerClasses="fixed bottom-2 left-8 z-[50] bg-stone-300/70 backdrop-blur-lg rounded-md p-3 flex flex-col items-center max-w-xs text-center"
+  contentClasses="text-sm leading-none text-white"
+  expires={20}
+>
+  Ta strona używa plików cookies.
+</CookieConsent>
+
+
     </section>
   );
 }

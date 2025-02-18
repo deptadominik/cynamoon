@@ -120,8 +120,8 @@ export default function PhotoGallery() {
 
   return (
     <section
-      id="photo-gallery"
-      className={`w-full mt-16 pb-14 lg:mt-56 lg:pb-56 lg:mb-[22.5rem]`}
+      id="gallery"
+      className={`w-full mt-16 pb-14 lg:mt-56`}
       style={{
         transform: isInView ? "none" : "translateY(100px)",
         opacity: isInView ? 1 : 0,
