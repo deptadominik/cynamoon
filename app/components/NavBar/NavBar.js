@@ -27,11 +27,11 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-4 left-1/2 transform -translate-x-1/2 z-50 flex items-center justify-center w-[90%] max-w-4xl px-6 py-3 rounded-full shadow-lg transition-all duration-300 backdrop-blur-lg bg-white/80 border border-gray-200 ${
-        isScrolled ? "bg-white/90" : "bg-white/50"
+      className={`fixed top-4 z-50 flex items-center justify-center px-6 py-3 rounded-full shadow-lg transition-all duration-300 backdrop-blur-lg bg-blue-950/80 border border-gray-200 ${
+        isScrolled ? "left-1/2 transform -translate-x-1/2 w-[60%] max-w-2xl" : "left-[36%] transform -translate-x-0 w-[50%] max-w-3xl"
       }`}
     >
-      <div className="hidden md:flex gap-6 text-blue-900 font-medium">
+      <div className="hidden md:flex gap-6 text-white font-medium text-lg">
         <NavItem to="about" label="O nas" />
         <NavItem to="members" label="Skład zespołu" />
         <NavItem to="gallery" label="Galeria" />
@@ -39,18 +39,17 @@ export default function Navbar() {
       </div>
       <div className="md:hidden">
         <button onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+          {isOpen ? <X size={28} className='text-white'/> : <Menu size={28} className='text-white'/>}
         </button>
       </div>
       {isOpen && (
-  <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-[90%] max-w-sm bg-white shadow-md flex flex-col items-center justify-center py-4 space-y-4 text-center md:hidden rounded-lg">
-    <NavItem to="about" label="O nas" onClick={() => setIsOpen(false)} />
-    <NavItem to="members" label="Skład zespołu" onClick={() => setIsOpen(false)} />
-    <NavItem to="gallery" label="Galeria" onClick={() => setIsOpen(false)} />
-    <NavItem to="contact" label="Kontakt" onClick={() => setIsOpen(false)} />
-  </div>
-)}
-
+        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-[90%] max-w-sm bg-white shadow-md flex flex-col items-center justify-center py-4 space-y-4 text-center md:hidden rounded-lg">
+          <NavItem to="about" label="O nas" onClick={() => setIsOpen(false)} />
+          <NavItem to="members" label="Skład zespołu" onClick={() => setIsOpen(false)} />
+          <NavItem to="gallery" label="Galeria" onClick={() => setIsOpen(false)} />
+          <NavItem to="contact" label="Kontakt" onClick={() => setIsOpen(false)} />
+        </div>
+      )}
     </nav>
   );
 }
