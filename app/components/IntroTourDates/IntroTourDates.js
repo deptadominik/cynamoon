@@ -38,7 +38,7 @@ export default function IntroTourDates() {
 
   return (
     <div
-      className="flex flex-col items-center justify-center w-full px-4 lg:pl-[20rem] max-w-6xl mx-auto mt-8 md:mt-0"
+      className="flex flex-col items-center justify-center w-full px-4 lg:pl-[20rem] max-w-6xl mx-auto mt-16 md:mt-0"
       style={{
         transform: isInView ? "none" : "translateY(-100px)",
         opacity: isInView ? 1 : 0,
