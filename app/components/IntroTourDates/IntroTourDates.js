@@ -56,11 +56,7 @@ export default function IntroTourDates() {
           return (
             <li
               key={gig.id}
-<<<<<<< Updated upstream
-              className="grid grid-cols-[6rem_1fr_auto] gap-8 items-center my-4 lg:my-10 text-xl md:text-2xl lg:text-xl xl:text-2xl"
-=======
               className="grid grid-cols-[6rem_20rem_10rem_10rem] gap-10 items-center my-10 text-xl md:text-2xl lg:text-xl xl:text-2xl"
->>>>>>> Stashed changes
             >
               {/* Data */}
               <div className="flex flex-col justify-center items-center w-[5.5rem] h-[5.5rem] p-2 bg-blue-900 text-xl rounded-md border-8 border-white">
