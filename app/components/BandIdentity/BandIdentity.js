@@ -16,7 +16,7 @@ import {
 export default function BandIdentity() {
   return (
     <>
-      <div className="w-full py-3 z-50 lg:hidden">
+      <div className="w-full py-3 z-50 lg:hidden pointer-events-none">
         <Container customClasses="px-2.5 flex items-center justify-between font-sm">
           <Image
             className="max-w-[6rem] h-auto "

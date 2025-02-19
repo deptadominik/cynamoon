@@ -1,5 +1,5 @@
 "use client";
-
+import NewAlbum from "../NewAlbum/NewAlbum";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { MapMapper } from "@/app/svg-icons/svg-icons";
@@ -34,7 +34,7 @@ export default function IntroTourDates() {
 
   return (
     <div
-      className="flex flex-col items-center justify-center w-full px-4 lg:pl-[20rem] max-w-6xl mx-auto"
+      className="flex flex-col items-center justify-center w-full px-4 lg:pl-[20rem] max-w-6xl mx-auto mt-8 md:mt-0"
       style={{
         transform: isInView ? "none" : "translateY(-100px)",
         opacity: isInView ? 1 : 0,
@@ -85,6 +85,9 @@ export default function IntroTourDates() {
           );
         })}
       </ul>
+      <div className="lg:hidden md:hidden">
+        <NewAlbum />
+      </div>
     </div>
   );
 }

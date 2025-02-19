@@ -27,7 +27,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-4 z-50 flex items-center justify-center px-6 py-3 rounded-full shadow-lg transition-all duration-300 backdrop-blur-lg bg-blue-950/80 border border-gray-200 ${
+      className={`fixed top-6 md:top-4 z-50 flex items-center justify-center px-6 py-3 rounded-full shadow-lg transition-all duration-300 backdrop-blur-lg bg-blue-950/80 border border-gray-200 ${
         isScrolled ? "left-1/2 transform -translate-x-1/2 w-[60%] max-w-2xl" : "left-[36%] transform -translate-x-0 w-[50%] max-w-3xl"
       }`}
     >
