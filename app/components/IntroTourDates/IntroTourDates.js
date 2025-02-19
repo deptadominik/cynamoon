@@ -56,7 +56,7 @@ export default function IntroTourDates() {
           return (
             <li
               key={gig.id}
-              className="grid grid-cols-[6rem_20rem_10rem_10rem] gap-10 items-center my-10 text-xl md:text-2xl lg:text-xl xl:text-2xl"
+              className="grid grid-cols-[6rem_20rem_10rem_1fr] gap-10 items-center my-10 text-xl md:text-2xl lg:text-xl xl:text-2xl"
             >
               {/* Data */}
               <div className="flex flex-col justify-center items-center w-[5.5rem] h-[5.5rem] p-2 bg-blue-900 text-xl rounded-md border-8 border-white">
@@ -87,25 +87,31 @@ export default function IntroTourDates() {
               </div>
 
               {/* Tickets */}
-              <div className="flex items-center">
-                <a
-                  href={gig.ticketsRef}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    fontSize: "20px",
-                    border: "4px solid #db9a18",
-                    color: "#db9a18",
-                    backgroundColor: "transparent",
-                    padding: "5px 10px",
-                    borderRadius: "6px",
-                    textDecoration: "none",
-                    transition:
-                      "background-color 0.3s ease-in, color 0.3s ease-in",
-                  }}
-                >
-                  <p>{gig.ticketsRef === "" ? "Free" : "Bilety"}</p>
-                </a>
+              <div
+                className="flex items-center"
+                style={{
+                  fontSize: "20px",
+                  border: "4px solid #db9a18",
+                  color: "#db9a18",
+                  backgroundColor: "transparent",
+                  padding: "5px 10px",
+                  borderRadius: "6px",
+                  textDecoration: "none",
+                  transition:
+                    "background-color 0.3s ease-in, color 0.3s ease-in",
+                }}
+              >
+                {gig.ticketsRef === "" ? (
+                  <p>Free</p>
+                ) : (
+                  <a
+                    href={gig.ticketsRef}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p>Bilety</p>
+                  </a>
+                )}
               </div>
             </li>
           );
