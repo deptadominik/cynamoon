@@ -48,7 +48,7 @@ export default function About() {
       </Container>
 
       <Image
-        className="w-full mt-5 max-w-md h-auto object-cover lg:mt-0 lg:max-w-sm xl:max-w-md mr-4 lg:mr-12 xl:mr-16 rounded-lg"
+        className="w-2/3 mt-5 max-w-md h-auto object-cover lg:mt-0 lg:max-w-sm xl:max-w-md lg:mr-12 xl:mr-16 rounded-lg"
         src={`${process.env.NEXT_PUBLIC_BASE_PATH}/about.jpg`}
         width={533}
         height={533}

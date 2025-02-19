@@ -47,12 +47,12 @@ export default function IntroTourDates() {
       </h2>
 
       {/* Lista koncertów */}
-      <ul className="list-none w-full max-w-2xl mt-6">
+      <ul className="list-none w-full max-w-2xl lg:mt-6">
         {tourDates.map((gig) => {
           return (
             <li
               key={gig.id}
-              className="grid grid-cols-[6rem_1fr_auto] gap-8 items-center my-10 text-xl md:text-2xl lg:text-xl xl:text-2xl"
+              className="grid grid-cols-[6rem_1fr_auto] gap-8 items-center my-4 lg:my-10 text-xl md:text-2xl lg:text-xl xl:text-2xl"
             >
               {/* Data */}
               <div className="flex flex-col justify-center items-center w-[5.5rem] h-[5.5rem] p-2 bg-blue-900 text-xl rounded-md border-8 border-white">

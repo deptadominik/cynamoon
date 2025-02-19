@@ -71,7 +71,7 @@ export default function Members() {
         const isOdd = index % 2 === 0;
 
         return (
-          <div key={member.name} className={`relative flex flex-col items-center justify-between w-full mt-16 mx-auto max-w-[130rem] lg:mt-40 lg:flex-row ${isOdd ? "lg:flex-row-reverse" : ""} gap-24 lg:gap-32 px-8 lg:px-16`}>
+          <div key={member.name} className={`relative flex flex-col items-center justify-between w-full mt-16 mx-auto max-w-[130rem] lg:mt-40 lg:flex-row ${isOdd ? "lg:flex-row-reverse" : ""} gap-8 lg:gap-32 px-8 lg:px-16`}>
             <Container customClasses="lg:w-1/2">
               <div ref={ref} className="relative flex flex-col lg:max-w-md xl:max-w-2xl 2xl:max-w-4xl" style={{ transform: isInView ? "none" : "translateX(-100px)", opacity: isInView ? 1 : 0, transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s" }}>
                 <div className="overflow-hidden">

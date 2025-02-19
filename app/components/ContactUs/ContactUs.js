@@ -11,7 +11,7 @@ export default function ContactUs() {
   return (
     <section
       id="contact"
-      className="relative flex flex-col items-center justify-center w-full mt-16 mx-auto max-w-[150rem] lg:mt-56 lg:mb-[22.5rem]"
+      className="relative flex flex-col items-center justify-center w-full mt-16 mx-auto max-w-[150rem] lg:mt-56 mb-16 lg:mb-[22.5rem]"
     >
       <Container customClasses="flex flex-col items-center justify-center text-center px-4 lg:px-12 xl:px-16">
         <div

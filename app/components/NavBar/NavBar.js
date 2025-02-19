@@ -37,7 +37,7 @@ export default function Navbar() {
         <NavItem to="gallery" label="Galeria" />
         <NavItem to="contact" label="Kontakt" />
       </div>
-      <div className="md:hidden">
+      <div className="md:hidden flex justify-center">
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} className='text-white'/> : <Menu size={28} className='text-white'/>}
         </button>
