@@ -33,7 +33,7 @@ const members = [
   {
     name: "Bartosz Papaj",
     role: "Perkusista",
-    description: "Bartek. Zawodnik wagi ciężkiej, zagrał kilkaset koncertów, nagrał kilka płyt, widnieje w trzech encyklopediach 🤯 Prawdziwy profesjonalista. Bartek słynie ze swojego dynamicznego stylu gry i niezwykłej precyzji 🥁 Jego kreatywność w kreowaniu groove’u sprawia, że jest niezastąpionym członkiem naszego składu. Kocha gotować (miesza w garach i tłucze się po talerzach), ostatnio wystąpił w roli trenera w narożniku bokserskim 🥊 W pracy techniczny, a na próbach rytmiczny. W wolnych chwilach podróżuje z Córką. ✈️",
+    description: "Bartek. Zawodnik wagi ciężkiej, zagrał kilkaset koncertów, nagrał kilka płyt, widnieje w trzech encyklopediach 🤯 Prawdziwy profesjonalista. Bartek słynie ze swojego dynamicznego stylu gry i niezwykłej precyzji 🥁 Jego kreatywność w kreowaniu groove’u sprawia, że jest niezastąpionym członkiem naszego składu. Kocha gotować (miesza w garach i tłucze się po talerzach), ostatnio wystąpił w roli trenera w narożniku bokserskim 🥊 W pracy techniczny, a na próbach rytmiczny. W wolnych chwilach podróżuje ✈️",
     image: `${process.env.NEXT_PUBLIC_BASE_PATH}/Bartek.jpg`,
   },
   {
