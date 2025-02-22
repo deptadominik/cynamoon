@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/cynamoon",
-  assetPrefix: "/cynamoon/",
+  basePath: "",
+  assetPrefix: "",
   env: {
-    NEXT_PUBLIC_BASE_PATH: "/cynamoon",
+    NEXT_PUBLIC_BASE_PATH: "",
   },
 };
 
