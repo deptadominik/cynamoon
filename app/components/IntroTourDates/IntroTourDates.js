@@ -24,6 +24,14 @@ const tourDates = [
   },
   {
     id: 3,
+    date: "22.03",
+    venue: "Centrum Kultury",
+    city: "Kluczbork",
+    eventRef: "",
+    ticketsRef: "",
+  },
+  {
+    id: 4,
     date: "10.05",
     venue: "Rebel Garden Cafe",
     city: "Chorzów",
