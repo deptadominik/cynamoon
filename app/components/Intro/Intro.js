@@ -37,12 +37,11 @@ export default function Intro() {
       <BandIdentity />
       <div className="absolute w-full h-full top-0 left-0">
         <div className="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-black to-blue-900 opacity-40"></div>
-        <div className="absolute w-full h-full top-0 left-0 bg-hero-pattern bg-repeat"></div>
         <video
           autoPlay
           muted
           loop
-          poster="/frame-band.jpg"
+          poster="/background.jpg"
           className="object-cover w-full h-full z-10"
           playsInline
           preload="auto"

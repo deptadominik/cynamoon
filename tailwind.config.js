@@ -10,7 +10,7 @@ module.exports = {
 			backgroundImage: {
 				"album-cover": "url('/panic-panini-album.jpg')",
 				"incoming-shows": "url('/coming-shows-bg.jpg')",
-				"hero-pattern": "url('/pattern.png')",
+				"hero-pattern": "url('/background.jpg')",
 			},
 			fontFamily: {
 				permanentMarker: ["Permanent Marker", "sans-serif"],
