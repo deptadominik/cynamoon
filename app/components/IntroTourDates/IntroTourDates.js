@@ -10,7 +10,7 @@ const tourDates = [
     date: "20.03",
     venue: "Klub Studencki Spirala",
     city: "Gliwice",
-    eventRef: "",
+    eventRef: "https://fb.me/e/8dg8FZA2B",
     ticketsRef: "",
   },
   {
@@ -27,7 +27,7 @@ const tourDates = [
     date: "22.03",
     venue: "Centrum Kultury",
     city: "Kluczbork",
-    eventRef: "",
+    eventRef: "https://fb.me/e/5Y77J19Jo",
     ticketsRef: "",
   },
   {
