@@ -66,7 +66,6 @@ export default function Intro() {
       <Container customClasses="flex flex-col justify-center items-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:justify-end lg:items-end">
         <IntroTourDates />
       </Container>
-      <NewAlbum customClasses="mt-auto z-50 lg:hidden" />
       <BackToTop
         customClasses={`reveal${isScrollTopVisible ? " visible" : ""}`}
       />
