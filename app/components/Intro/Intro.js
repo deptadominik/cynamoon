@@ -45,6 +45,7 @@ export default function Intro() {
           poster="/frame-band.jpg"
           className="object-cover w-full h-full z-10"
           playsInline
+          preload="auto"
         >
           <source
             src={`${process.env.NEXT_PUBLIC_BASE_PATH}/video-band.webm`}
