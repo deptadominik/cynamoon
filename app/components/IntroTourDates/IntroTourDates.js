@@ -7,14 +7,6 @@ import { MapMapper } from "@/app/svg-icons/svg-icons";
 const tourDates = [
   {
     id: 1,
-    date: "20.03",
-    venue: "Klub Studencki Spirala",
-    city: "Gliwice",
-    eventRef: "https://fb.me/e/8dg8FZA2B",
-    ticketsRef: "",
-  },
-  {
-    id: 2,
     date: "21.03",
     venue: "Komin Music Cafe",
     city: "Sosnowiec",
@@ -23,7 +15,7 @@ const tourDates = [
       "https://www.kupbilecik.pl/imprezy/156853/sosnowiec/trzy.wymiary.dzwieku",
   },
   {
-    id: 3,
+    id: 2,
     date: "22.03",
     venue: "Centrum Kultury",
     city: "Kluczbork",
@@ -31,7 +23,7 @@ const tourDates = [
     ticketsRef: "",
   },
   {
-    id: 4,
+    id: 3,
     date: "10.05",
     venue: "Rebel Garden Cafe",
     city: "Chorzów",
