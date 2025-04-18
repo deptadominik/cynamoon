@@ -5,33 +5,56 @@
 @tailwind utilities;
 
 @layer utilities {
-	.font-rendering {
-		font-synthesis: none;
-		text-rendering: optimizeLegibility;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-	/* Hide scrollbar for Chrome, Safari and Opera */
-	.no-scrollbar::-webkit-scrollbar {
-		display: none;
-	}
+  .font-rendering {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 
-	/* Hide scrollbar for IE, Edge and Firefox */
-	.no-scrollbar {
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
-	}
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 
-	/* Element before intersection */
-	.reveal {
-		opacity: 0;
-		transform: translate3d(0, 100px, 0);
-		transition: opacity 0.8s, transform 0.8s;
-	}
+  /* Element before intersection */
+  .reveal {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+    transition: opacity 0.8s, transform 0.8s;
+  }
 
-	/* Element after intersection */
-	.reveal.visible {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
+  /* Element after intersection */
+  .reveal.visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  /* Scrollbar – subtelna, ciemna, pasująca do dark UI */
+  .scrollbar-dark::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-dark::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-dark::-webkit-scrollbar-thumb {
+    background-color: #374151; /* Tailwind gray-700 */
+    border-radius: 6px;
+    border: 2px solid transparent; /* padding-like effect */
+    background-clip: content-box;
+  }
+  .scrollbar-dark::-webkit-scrollbar-thumb:hover {
+    background-color: #4b5563; /* Tailwind gray-600 */
+  }
+
+  /* Firefox */
+  .scrollbar-dark {
+    scrollbar-width: thin;
+    scrollbar-color: #374151 transparent;
+  }
 }

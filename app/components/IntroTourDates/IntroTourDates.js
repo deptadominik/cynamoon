@@ -37,7 +37,7 @@ const tourDates = [
     city: "Chorzów",
     eventRef: "https://www.facebook.com/events/1004595918433278",
     ticketsRef: "",
-  }
+  },
 ];
 
 export default function IntroTourDates() {
@@ -73,12 +73,13 @@ export default function IntroTourDates() {
       </h2>
 
       <ul
-        className={`list-none w-full max-w-2xl lg:mt-6 ${
-          isSlider
-            ? "overflow-y-auto overflow-x-hidden max-h-[340px] snap-y snap-mandatory pr-4"
-            : ""
-        }`}
-      >
+  className={`list-none w-full max-w-2xl lg:mt-6 ${
+    isSlider
+      ? "overflow-y-auto overflow-x-hidden max-h-[340px] snap-y snap-mandatory pr-4 scrollbar-dark"
+      : ""
+  }`}
+>
+
         {tourDates.map((gig, index) => (
           <li
             key={gig.id}
