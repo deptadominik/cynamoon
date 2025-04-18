@@ -37,16 +37,30 @@ const tourDates = [
     city: "Chorzów",
     eventRef: "https://www.facebook.com/events/1004595918433278",
     ticketsRef: "",
-  },
+  }
 ];
 
 export default function IntroTourDates() {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true });
+  const isSlider = tourDates.length > 3;
+
+  const getOpacityClass = (index) => {
+    const opacities = [
+      "opacity-100",
+      "opacity-100",
+      "opacity-100",
+      "opacity-80",
+      "opacity-60",
+      "opacity-40",
+      "opacity-20",
+    ];
+    return opacities[index] || "opacity-10";
+  };
 
   return (
     <div
-      className="flex flex-col items-center justify-center w-full px-4 lg:pl-[20rem] max-w-6xl mx-auto mt-16 md:mt-0"
+      className="flex flex-col items-center justify-center w-full px-4 lg:pl-[20rem] max-w-6xl mx-auto mt-16 md:mt-0 overflow-x-hidden"
       style={{
         transform: isInView ? "none" : "translateY(-100px)",
         opacity: isInView ? 1 : 0,
@@ -58,73 +72,78 @@ export default function IntroTourDates() {
         Koncerty
       </h2>
 
-      {/* Lista koncertów */}
-      <ul className="list-none w-full max-w-2xl lg:mt-6">
-        {tourDates.map((gig) => {
-          return (
-            <li
-              key={gig.id}
-              className="grid grid-cols-[6rem_20rem_10rem_1fr] gap-10 items-center my-10 text-xl md:text-2xl lg:text-xl xl:text-2xl"
-            >
-              {/* Data */}
-              <div className="flex flex-col justify-center items-center w-[5.5rem] h-[5.5rem] p-2 bg-blue-900 text-xl rounded-md border-8 border-white">
-                <p className="font-bold text-white leading-none text-center uppercase lg:text-2xl">
-                  {gig.date}
-                </p>
-              </div>
+      <ul
+        className={`list-none w-full max-w-2xl lg:mt-6 ${
+          isSlider
+            ? "overflow-y-auto overflow-x-hidden max-h-[340px] snap-y snap-mandatory pr-4"
+            : ""
+        }`}
+      >
+        {tourDates.map((gig, index) => (
+          <li
+            key={gig.id}
+            className={`min-w-0 grid grid-cols-2 md:grid-cols-[6rem_1fr_10rem_8rem] gap-6 items-center my-10 text-xl md:text-2xl lg:text-xl xl:text-2xl ${
+              isSlider ? "snap-start" : ""
+            } ${getOpacityClass(index)} transition-opacity duration-500`}
+          >
+            {/* Data */}
+            <div className="flex flex-col justify-center items-center w-[5.5rem] h-[5.5rem] p-2 bg-blue-900 text-xl rounded-md border-8 border-white">
+              <p className="font-bold text-white leading-none text-center uppercase lg:text-2xl">
+                {gig.date}
+              </p>
+            </div>
 
-              {/* Miejsce */}
-              <div className="text-white leading-none flex flex-col justify-center">
-                {gig.eventRef !== "" ? (
-                  <a
-                    href={gig.eventRef}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <p>{gig.venue}</p>
-                  </a>
-                ) : (
+            {/* Miejsce */}
+            <div className="text-white leading-none flex flex-col justify-center">
+              {gig.eventRef !== "" ? (
+                <a
+                  href={gig.eventRef}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <p>{gig.venue}</p>
-                )}
-              </div>
+                </a>
+              ) : (
+                <p>{gig.venue}</p>
+              )}
+            </div>
 
-              {/* Miasto */}
-              <div className="text-white flex items-center">
-                <MapMapper extraClasses="fill-amber-400 mr-4" />
-                <p>{gig.city}</p>
-              </div>
+            {/* Miasto */}
+            <div className="text-white items-center hidden md:flex">
+              <MapMapper extraClasses="fill-amber-400 mr-2" />
+              <p>{gig.city}</p>
+            </div>
 
-              {/* Tickets */}
-              <div
-                className="flex items-center"
-                style={{
-                  fontSize: "20px",
-                  border: "4px solid #db9a18",
-                  color: "#db9a18",
-                  backgroundColor: "transparent",
-                  padding: "5px 10px",
-                  borderRadius: "6px",
-                  textDecoration: "none",
-                  transition:
-                    "background-color 0.3s ease-in, color 0.3s ease-in",
-                }}
-              >
-                {gig.ticketsRef === "" ? (
-                  <p>Free</p>
-                ) : (
-                  <a
-                    href={gig.ticketsRef}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <p>Bilety</p>
-                  </a>
-                )}
-              </div>
-            </li>
-          );
-        })}
+            {/* Tickets */}
+            <div
+              className="hidden md:flex items-center justify-center"
+              style={{
+                fontSize: "20px",
+                border: "4px solid #db9a18",
+                color: "#db9a18",
+                backgroundColor: "transparent",
+                padding: "5px 10px",
+                borderRadius: "6px",
+                textDecoration: "none",
+                transition: "background-color 0.3s ease-in, color 0.3s ease-in",
+              }}
+            >
+              {gig.ticketsRef === "" ? (
+                <p>Free</p>
+              ) : (
+                <a
+                  href={gig.ticketsRef}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p>Bilety</p>
+                </a>
+              )}
+            </div>
+          </li>
+        ))}
       </ul>
+
       <div className="lg:hidden md:hidden">
         <NewAlbum />
       </div>
