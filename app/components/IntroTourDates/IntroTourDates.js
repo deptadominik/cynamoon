@@ -24,10 +24,18 @@ const tourDates = [
   },
   {
     id: 3,
+    date: "23.04",
+    venue: "Pub Greenpoint Mariacka",
+    city: "Katowice",
+    eventRef: "https://www.facebook.com/events/3063580227127992",
+    ticketsRef: "",
+  },
+  {
+    id: 4,
     date: "10.05",
     venue: "Rebel Garden Cafe",
     city: "Chorzów",
-    eventRef: "",
+    eventRef: "https://www.facebook.com/events/1004595918433278",
     ticketsRef: "",
   },
 ];

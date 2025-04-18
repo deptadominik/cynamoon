@@ -11,6 +11,96 @@ import { MapMapper, Calendar } from "@/app/svg-icons/svg-icons";
 const galleryThumbnails = [
   {
     id: 1,
+    src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/thumbnail-4.jpg`,
+    club: "Centrum Kultury",
+    city: "Kluczbork",
+    date: "22/03/2025",
+    slides: [
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/kluczbork/1.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/kluczbork/2.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/kluczbork/3.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/kluczbork/4.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/kluczbork/5.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/kluczbork/6.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/kluczbork/7.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/kluczbork/8.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/kluczbork/9.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/kluczbork/10.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/kluczbork/11.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/kluczbork/12.jpg`,
+      }
+    ]
+  },
+  {
+    id: 2,
+    src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/thumbnail-3.jpeg`,
+    club: "Komin Music Cafe",
+    city: "Sosnowiec",
+    date: "21/03/2025",
+    slides: [
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/komin/1.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/komin/2.jpeg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/komin/3.jpeg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/komin/4.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/komin/5.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/komin/6.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/komin/7.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/komin/8.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/komin/9.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/komin/10.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/komin/11.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/komin/12.jpg`,
+      }
+    ]
+  },
+  {
+    id: 3,
     src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/thumbnail-2.jpg`,
     club: "Klub Studencki Spirala",
     city: "Gliwice",
@@ -58,7 +148,7 @@ const galleryThumbnails = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/thumbnail-1.jpg`,
     club: "MDK im. Andrzeja Bursy",
     city: "Kraków",
