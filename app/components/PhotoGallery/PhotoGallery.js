@@ -11,6 +11,48 @@ import { MapMapper, Calendar } from "@/app/svg-icons/svg-icons";
 const galleryThumbnails = [
   {
     id: 1,
+    src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/thumbnail-5.jpg`,
+    club: "Piąty Dom",
+    city: "Katowice",
+    date: "23/04/2025",
+    slides: [
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/piatydom/1.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/piatydom/2.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/piatydom/3.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/piatydom/4.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/piatydom/5.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/piatydom/6.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/piatydom/7.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/piatydom/8.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/piatydom/9.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/piatydom/10.jpg`,
+      },
+      {
+        src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/piatydom/11.jpg`,
+      }
+    ]
+  },
+  {
+    id: 2,
     src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/thumbnail-4.jpg`,
     club: "Centrum Kultury",
     city: "Kluczbork",
@@ -55,7 +97,7 @@ const galleryThumbnails = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/thumbnail-3.jpeg`,
     club: "Komin Music Cafe",
     city: "Sosnowiec",
@@ -100,7 +142,7 @@ const galleryThumbnails = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/thumbnail-2.jpg`,
     club: "Klub Studencki Spirala",
     city: "Gliwice",
@@ -148,7 +190,7 @@ const galleryThumbnails = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     src: `${process.env.NEXT_PUBLIC_BASE_PATH}/gallery/slider-images/thumbnail-1.jpg`,
     club: "MDK im. Andrzeja Bursy",
     city: "Kraków",
