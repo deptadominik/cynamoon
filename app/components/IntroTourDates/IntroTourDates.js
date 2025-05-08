@@ -32,7 +32,7 @@ const tourDates = [
   },
   {
     id: 4,
-    date: "10.05",
+    date: "21.06",
     venue: "Rebel Garden Cafe",
     city: "Chorzów",
     eventRef: "https://www.facebook.com/events/1004595918433278",
