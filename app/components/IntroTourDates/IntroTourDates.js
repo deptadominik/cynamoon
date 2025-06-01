@@ -38,6 +38,14 @@ const tourDates = [
     eventRef: "https://www.facebook.com/events/1004595918433278",
     ticketsRef: "",
   },
+  {
+    id: 5,
+    date: "28.06",
+    venue: "Improwizacja Jazz Club",
+    city: "Kraków",
+    eventRef: "https://www.facebook.com/events/4179251509066894",
+    ticketsRef: "",
+  },
 ];
 
 export default function IntroTourDates() {
@@ -80,7 +88,7 @@ export default function IntroTourDates() {
   }`}
 >
 
-        {tourDates.map((gig, index) => (
+        {tourDates.slice().reverse().map((gig, index) => (
           <li
             key={gig.id}
             className={`min-w-0 grid grid-cols-2 md:grid-cols-[6rem_1fr_10rem_8rem] gap-6 items-center my-10 text-xl md:text-2xl lg:text-xl xl:text-2xl ${
