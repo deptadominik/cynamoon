@@ -25,7 +25,7 @@ const tourDates = [
   {
     id: 3,
     date: "23.04",
-    venue: "Pub Greenpoint Mariacka",
+    venue: "Klubokawiarnia Piąty Dom",
     city: "Katowice",
     eventRef: "https://www.facebook.com/events/3063580227127992",
     ticketsRef: "",
@@ -44,7 +44,7 @@ const tourDates = [
     venue: "Improwizacja Jazz Club",
     city: "Kraków",
     eventRef: "https://www.facebook.com/events/4179251509066894",
-    ticketsRef: "",
+    ticketsRef: "https://www.facebook.com/events/4179251509066894",
   },
 ];
 
