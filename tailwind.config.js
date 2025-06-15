@@ -16,6 +16,7 @@ module.exports = {
 				permanentMarker: ["Permanent Marker", "sans-serif"],
 				poppins: ["Poppins", "sans-serif"],
 				rockSalt: ["Rock Salt", "sans-serif"],
+				caveat: ['"Caveat"', 'cursive'],
 			},
 			colors: {
 				"fluo-green": "#43ffb6",

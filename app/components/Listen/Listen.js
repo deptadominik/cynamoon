@@ -34,13 +34,13 @@ export default function Listen() {
                 isInView ? "animate-slideUp" : ""
               }`}
             >
-              Nie chcę ufać Ci
+              Słowa
             </h2>
           </div>
           <p className="text-justify text-2xl leading-relaxed">
-            To opowieść o relacji i zaufaniu – o więzi, która ewoluuje, zmienia
-            się i trwa, ale też o zaufaniu, które trudno zdobyć, lecz niezwykle
-            łatwo stracić.
+            Emocjonalna podróż prowadząca ku zapomnieniu. To utwór o
+            zamykaniu rozdziałów, o tym, co przestaje mieć znaczenie i co
+            wreszcie można zostawić za sobą.
           </p>
           {/* TODO chyba zbedne */}
           {/* <div className="flex items-center pt-4 gap-4">
@@ -51,8 +51,17 @@ export default function Listen() {
 					</div> */}
         </div>
         <div className="flex items-center justify-center pt-5 basis-2/4 mt-20 lg:mt-0 lg:justify-end lg:pt-[60px]">
-          <iframe
+          {/* <iframe
             src="https://open.spotify.com/embed/track/3waPbqDFZ1VAWvFHHD3YDT?utm_source=generator"
+            width="100%"
+            height="352"
+            frameBorder="0"
+            allowFullScreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe> */}
+          <iframe
+            src="https://open.spotify.com/embed/track/4GNKOZFS5Wsr0FsSATzRVg?utm_source=generator"
             width="100%"
             height="352"
             frameBorder="0"

@@ -46,6 +46,14 @@ const tourDates = [
     eventRef: "https://www.facebook.com/events/4179251509066894",
     ticketsRef: "https://www.facebook.com/events/4179251509066894",
   },
+  {
+    id: 6,
+    date: "26.07",
+    venue: "Festiwal Zespołów",
+    city: "Tarnowiec",
+    eventRef: "https://www.facebook.com/tarnogranie",
+    ticketsRef: "",
+  },
 ];
 
 export default function IntroTourDates() {

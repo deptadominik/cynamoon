@@ -6,7 +6,7 @@ export default function NewAlbum({ customClasses }) {
   const isInView = useInView(comingSoonRef, { once: true });
   return (
     <a
-      href="http://bit.ly/3WKZoS3"
+      href="https://artists.landr.com/990591386761"
       target="_blank"
       rel="noopener noreferrer"
       className="block w-full"
@@ -25,7 +25,7 @@ export default function NewAlbum({ customClasses }) {
         <h4 className="text-white font-permanentMarker text-xl">
           Nowy singiel
         </h4>
-        <h4 className="text-white font-rockSalt text-xl">Nie chcę ufać Ci</h4>
+        <h4 className="text-white font-caveat text-4xl">Słowa</h4>
         <p className="text-orange-500 text-base">Już w streamingu!</p>
       </div>
     </a>
