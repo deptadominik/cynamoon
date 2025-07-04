@@ -54,6 +54,14 @@ const tourDates = [
     eventRef: "https://www.facebook.com/tarnogranie",
     ticketsRef: "",
   },
+  {
+    id: 7,
+    date: "16.08",
+    venue: "JACKBAR KATO",
+    city: "Katowice",
+    eventRef: "https://www.facebook.com/events/1208589157235340",
+    ticketsRef: "https://www.facebook.com/events/1208589157235340",
+  },
 ];
 
 export default function IntroTourDates() {
