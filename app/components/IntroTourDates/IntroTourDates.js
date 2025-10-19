@@ -62,6 +62,22 @@ const tourDates = [
     eventRef: "https://www.facebook.com/events/1208589157235340",
     ticketsRef: "https://www.facebook.com/events/1208589157235340",
   },
+  {
+    id: 8,
+    date: "22.10",
+    venue: "33. Giełda Piosenki Studenckiej",
+    city: "SCK Opole",
+    eventRef: "https://www.facebook.com/zimowagieldapiosenki",
+    ticketsRef: "",
+  },
+  {
+    id: 9,
+    date: "26.10",
+    venue: "Chicago Bar",
+    city: "Kraków",
+    eventRef: "https://www.facebook.com/events/1745009162868182",
+    ticketsRef: "https://www.facebook.com/events/1745009162868182",
+  },
 ];
 
 export default function IntroTourDates() {

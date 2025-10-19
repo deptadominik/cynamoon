@@ -34,13 +34,11 @@ export default function Listen() {
                 isInView ? "animate-slideUp" : ""
               }`}
             >
-              Słowa
+              Ze mną chodź
             </h2>
           </div>
           <p className="text-justify text-2xl leading-relaxed">
-            Emocjonalna podróż prowadząca ku zapomnieniu. To utwór o
-            zamykaniu rozdziałów, o tym, co przestaje mieć znaczenie i co
-            wreszcie można zostawić za sobą.
+            Utwór o ucieczce od codzienności, zanurzeniu się w nocnym rytmie miasta i chwytaniu chwili. Opowiada o spontaniczności, beztrosce i tańcu, który zatrzymuje czas. Bez planów, bez celu, tylko tu i teraz.
           </p>
           {/* TODO chyba zbedne */}
           {/* <div className="flex items-center pt-4 gap-4">
@@ -61,7 +59,7 @@ export default function Listen() {
             loading="lazy"
           ></iframe> */}
           <iframe
-            src="https://open.spotify.com/embed/track/4GNKOZFS5Wsr0FsSATzRVg?utm_source=generator"
+            src="https://open.spotify.com/embed/track/2yklMR78RzGRwJv9qv7CxS?utm_source=generator"
             width="100%"
             height="352"
             frameBorder="0"
