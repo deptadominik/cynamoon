@@ -34,11 +34,15 @@ export default function Listen() {
                 isInView ? "animate-slideUp" : ""
               }`}
             >
-              Ze mną chodź
+              W połowie
             </h2>
           </div>
           <p className="text-justify text-2xl leading-relaxed">
-            Utwór o ucieczce od codzienności, zanurzeniu się w nocnym rytmie miasta i chwytaniu chwili. Opowiada o spontaniczności, beztrosce i tańcu, który zatrzymuje czas. Bez planów, bez celu, tylko tu i teraz.
+            Utwór opowiada o próbie pogodzenia się z tym, czego nie można
+            zmienić, akceptacji przeszłości i wyborów. To osobista historia
+            dotycząca odnajdywania na nowo harmonii, budowania pewności oraz
+            radzenia sobie z licznymi emocjami, opleciona wesołą warstwą
+            muzyczną, która zarazem „puszcza oczko” do słuchacza.
           </p>
           {/* TODO chyba zbedne */}
           {/* <div className="flex items-center pt-4 gap-4">
@@ -59,11 +63,11 @@ export default function Listen() {
             loading="lazy"
           ></iframe> */}
           <iframe
-            src="https://open.spotify.com/embed/track/2yklMR78RzGRwJv9qv7CxS?utm_source=generator"
+            src="https://open.spotify.com/embed/track/3ftmmkJG4fR5IIHmyCwHxA?utm_source=generator"
             width="100%"
             height="352"
             frameBorder="0"
-            allowFullScreen=""
+            allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
           ></iframe>
