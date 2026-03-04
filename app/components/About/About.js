@@ -38,9 +38,9 @@ export default function About() {
           <p className="text-sm lg:text-base xl:text-lg leading-relaxed text-justify">
             <b>Cynamoon.</b> Pop z elementami funkowej energii oraz lirycznymi
             tekstami, okraszone soulowym feelingiem momentami nawet w rytmie
-            disco, co sprawia, że nasza muzyka – choć osadzona w konkretnej
-            estetyce – posiada różne oblicza. Pochodzimy ze Śląska. W obecnym
-            składzie, na który składa się aż 9 muzycznych osobowości, gramy od
+            disco, co sprawia, że nasza muzyka - choć osadzona w konkretnej
+            estetyce - posiada różne oblicza. Pochodzimy ze Śląska. W obecnym
+            składzie, na który składa się aż 6 muzycznych osobowości, gramy od
             2024 roku. Uwielbiamy eksperymentować, tworzyć niebanalne melodie, a
             także improwizować.
           </p>

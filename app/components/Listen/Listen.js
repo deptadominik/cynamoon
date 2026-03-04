@@ -34,15 +34,14 @@ export default function Listen() {
                 isInView ? "animate-slideUp" : ""
               }`}
             >
-              W połowie
+              Miło było
             </h2>
           </div>
           <p className="text-justify text-2xl leading-relaxed">
-            Utwór opowiada o próbie pogodzenia się z tym, czego nie można
-            zmienić, akceptacji przeszłości i wyborów. To osobista historia
-            dotycząca odnajdywania na nowo harmonii, budowania pewności oraz
-            radzenia sobie z licznymi emocjami, opleciona wesołą warstwą
-            muzyczną, która zarazem „puszcza oczko” do słuchacza.
+            Utwór opowiada o spokojnym, ale i stanowczym pożegnaniu oraz zamyka
+            pewne drzwi przeszłości, aby odzyskać zagubioną równowagę. Historia
+            o decyzjach, by nie tonąć w cudzych emocjach, strąceniu fałszu i
+            powierzchowności oraz o wybraniu siebie.
           </p>
           {/* TODO chyba zbedne */}
           {/* <div className="flex items-center pt-4 gap-4">
@@ -63,7 +62,7 @@ export default function Listen() {
             loading="lazy"
           ></iframe> */}
           <iframe
-            src="https://open.spotify.com/embed/track/3ftmmkJG4fR5IIHmyCwHxA?utm_source=generator"
+            src="https://open.spotify.com/embed/track/12HQDZDdc7cQV057zP9CGe?utm_source=generator"
             width="100%"
             height="352"
             frameBorder="0"

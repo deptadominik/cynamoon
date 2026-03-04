@@ -6,7 +6,7 @@ export default function NewAlbum({ customClasses }) {
   const isInView = useInView(comingSoonRef, { once: true });
   return (
     <a
-      href="https://youtu.be/bfygg1NCMiM"
+      href="https://youtu.be/BLVnaNeEtbY"
       target="_blank"
       rel="noopener noreferrer"
       className="block w-full"
@@ -25,7 +25,7 @@ export default function NewAlbum({ customClasses }) {
         <h4 className="text-white font-permanentMarker text-xl">
           Nowy singiel
         </h4>
-        <h4 className="text-white font-caveat text-4xl">W połowie</h4>
+        <h4 className="text-white font-caveat text-4xl">Miło było</h4>
         <p className="text-orange-500 text-base">Już w streamingu!</p>
       </div>
     </a>
