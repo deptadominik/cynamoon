@@ -58,7 +58,7 @@ export default function Footer() {
 
           <div className="bg-black text-white mt-2 py-2">
             <p className="text-[0.7rem] text-center leading-tight mb-1">
-              Stronka zasilana przez naszych gitarzystów (programistów) -{" "}
+              Stronka zasilana przez naszego gitarzystę (programistę) -{" "}
               <a
                 className="text-blue-400 underline underline-offset-4 hover:text-yellow-600"
                 href="https://github.com/deptadominik"
@@ -66,15 +66,6 @@ export default function Footer() {
                 rel="noreferrer"
               >
                 Dominika
-              </a>{" "}
-              i{" "}
-              <a
-                className="text-blue-400 underline underline-offset-4 hover:text-yellow-600"
-                href="https://github.com/dkarolew"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Dawida
               </a>{" "}
               😎
             </p>
