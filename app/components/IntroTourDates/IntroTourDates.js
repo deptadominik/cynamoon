@@ -87,6 +87,14 @@ const tourDates = [
     ticketsRef:
       "https://www.wartaglowfestival.pl/event-details/warta-glow-festival-2026-1",
   },
+  {
+    id: 11,
+    date: "24.07",
+    venue: "ODKRYWKA",
+    city: "Kraków",
+    eventRef: "https://www.facebook.com/share/p/1BVH2qUdZX/",
+    ticketsRef: "",
+  },
 ];
 
 export default function IntroTourDates() {
