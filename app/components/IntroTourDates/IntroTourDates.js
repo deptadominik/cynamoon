@@ -13,6 +13,7 @@ const tourDates = [
     eventRef: "https://www.facebook.com/events/4038454276391813",
     ticketsRef:
       "https://www.kupbilecik.pl/imprezy/156853/sosnowiec/trzy.wymiary.dzwieku",
+    isPast: true,
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ const tourDates = [
     city: "Kluczbork",
     eventRef: "https://fb.me/e/5Y77J19Jo",
     ticketsRef: "",
+    isPast: true,
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ const tourDates = [
     city: "Katowice",
     eventRef: "https://www.facebook.com/events/3063580227127992",
     ticketsRef: "",
+    isPast: true,
   },
   {
     id: 4,
@@ -37,6 +40,7 @@ const tourDates = [
     city: "Chorzów",
     eventRef: "https://www.facebook.com/events/1004595918433278",
     ticketsRef: "",
+    isPast: true,
   },
   {
     id: 5,
@@ -45,6 +49,7 @@ const tourDates = [
     city: "Kraków",
     eventRef: "https://www.facebook.com/events/4179251509066894",
     ticketsRef: "https://www.facebook.com/events/4179251509066894",
+    isPast: true,
   },
   {
     id: 6,
@@ -53,6 +58,7 @@ const tourDates = [
     city: "Tarnowiec",
     eventRef: "https://www.facebook.com/tarnogranie",
     ticketsRef: "",
+    isPast: true,
   },
   {
     id: 7,
@@ -61,6 +67,7 @@ const tourDates = [
     city: "Katowice",
     eventRef: "https://www.facebook.com/events/1208589157235340",
     ticketsRef: "https://www.facebook.com/events/1208589157235340",
+    isPast: true,
   },
   {
     id: 8,
@@ -69,6 +76,7 @@ const tourDates = [
     city: "SCK Opole",
     eventRef: "https://www.facebook.com/zimowagieldapiosenki",
     ticketsRef: "",
+    isPast: true,
   },
   {
     id: 9,
@@ -77,15 +85,17 @@ const tourDates = [
     city: "Kraków",
     eventRef: "https://www.facebook.com/events/1745009162868182",
     ticketsRef: "https://www.facebook.com/events/1745009162868182",
+    isPast: true,
   },
   {
     id: 10,
     date: "11.07",
-    venue: "Warta Glow Festival",
+    venue: "[ODWOŁANY] Warta Glow Festival",
     city: "Śliwaków",
     eventRef: "https://www.facebook.com/events/721007477616060",
     ticketsRef:
       "https://www.wartaglowfestival.pl/event-details/warta-glow-festival-2026-1",
+    isPast: false,
   },
   {
     id: 11,
@@ -94,6 +104,7 @@ const tourDates = [
     city: "Kraków",
     eventRef: "https://www.facebook.com/share/p/1BVH2qUdZX/",
     ticketsRef: "",
+    isPast: false,
   },
 ];
 
@@ -146,14 +157,16 @@ export default function IntroTourDates() {
                 isSlider ? "snap-start" : ""
               } ${getOpacityClass(index)} transition-opacity duration-500`}
             >
-              {/* Data */}
-              <div className="flex flex-col justify-center items-center w-[5.5rem] h-[5.5rem] p-2 bg-blue-900 text-xl rounded-md border-8 border-white">
+              <div
+                className={`flex flex-col justify-center items-center w-[5.5rem] h-[5.5rem] p-2 text-xl rounded-md border-8 border-white ${
+                  gig.isPast ? "bg-gray-600" : "bg-blue-900"
+                }`}
+              >
                 <p className="font-bold text-white leading-none text-center uppercase lg:text-2xl">
                   {gig.date}
                 </p>
               </div>
 
-              {/* Miejsce */}
               <div className="text-white leading-none flex flex-col justify-center">
                 {gig.eventRef !== "" ? (
                   <a
@@ -168,13 +181,11 @@ export default function IntroTourDates() {
                 )}
               </div>
 
-              {/* Miasto */}
               <div className="text-white items-center hidden md:flex">
                 <MapMapper extraClasses="fill-amber-400 mr-2" />
                 <p>{gig.city}</p>
               </div>
 
-              {/* Tickets */}
               <div
                 className="hidden md:flex items-center justify-center"
                 style={{
